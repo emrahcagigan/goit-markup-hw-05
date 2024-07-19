@@ -723,12 +723,6 @@ footer {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
 .modal-close-button {
   position: absolute;
   top: 24px;
@@ -753,9 +747,23 @@ footer {
   border: none;
 }
 
-.modal-close-button:hover + .modal-close-svg,
-.modal-close-button:focus + .modal-close-svg {
+.modal-close-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.modal-close-button:hover svg,
+.modal-close-button:focus svg {
   fill: #ffffff;
+}
+
+.modal-paragraph {
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .modal-content .modal-paragraph {
@@ -794,17 +802,17 @@ footer {
   border-color: #4d5ae5;
 }
 
-.modal-svg-position {
-  position: relative;
-  margin-bottom: 16px;
-}
-
 .modal-form-svg {
   position: absolute;
   transform: translateY(-50%);
   top: 20px;
-  left: 10px;
+  left: 16px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-svg-position {
+  position: relative;
+  margin-bottom: 16px;
 }
 
 .modal-form-input:hover + .modal-form-svg,
@@ -832,7 +840,8 @@ footer {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-comment-input:focus {
+.modal-comment-input:focus,
+.modal-comment-input:hover {
   border-color: #4d5ae5;
 }
 
