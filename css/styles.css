@@ -764,7 +764,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 8px;
 }
 
 .modal-content .modal-paragraph {
@@ -775,6 +774,7 @@ footer {
 }
 
 .modal-form {
+  margin-bottom: 8px;
 }
 
 .modal-form-label {
