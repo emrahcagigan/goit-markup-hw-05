@@ -786,6 +786,10 @@ footer {
   margin-bottom: 4px;
 }
 
+.modal-form-four {
+  margin-bottom: 16px;
+}
+
 .modal-form-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
@@ -812,7 +816,6 @@ footer {
 
 .modal-svg-position {
   position: relative;
-  margin-bottom: 16px;
 }
 
 .modal-form-input:hover + .modal-form-svg,
@@ -822,6 +825,18 @@ footer {
 
 .modal-form-input::placeholder {
   padding-left: 0px;
+}
+
+.modal-term {
+  margin-bottom: 24px;
+}
+
+.modal-term-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  padding-right: 8px;
 }
 
 .modal-comment-input {
@@ -843,18 +858,6 @@ footer {
 .modal-comment-input:focus,
 .modal-comment-input:hover {
   border-color: #4d5ae5;
-}
-
-.modal-term {
-  margin-bottom: 24px;
-}
-
-.modal-term-label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  padding-right: 8px;
 }
 
 .modal-term-privacy {
@@ -883,8 +886,7 @@ footer {
 
 .modal-send-button {
   display: block;
-  flex-direction: column;
-  justify-content: center;
+  margin: 0 auto;
   min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
